@@ -9,7 +9,7 @@ import org.springframework.data.domain.Sort;
 public class Model_api {
 
     private int pageSize = 20;
-    private int pageNumber = 1;
+    private int pageNumber = 0;
     private String sortBy = "id";
     private Sort.Direction sortDirection = Sort.Direction.ASC;
 }
