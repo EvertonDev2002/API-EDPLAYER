@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import com.edplayer.edplayer.Service.Service_Edp;
 import com.edplayer.edplayer.Repository.Repository_Edp;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -47,6 +48,12 @@ public class Controller_api {
     public ResponseEntity<Model_Edp> addModelApi(@RequestBody Model_Edp model_Edp) {
 
         return new ResponseEntity<>(service_API.addApi(model_Edp), HttpStatus.CREATED);
+    }
+
+    @GetMapping("/{id}")
+    @ApiOperation(value = "Buscar uma música")
+    public Model_Edp FindSound(@PathVariable(value = "id") long id){
+        return repository.findById(id);
     }
 
     @DeleteMapping("/delete")
