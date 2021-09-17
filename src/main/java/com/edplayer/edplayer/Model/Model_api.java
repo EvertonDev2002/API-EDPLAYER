@@ -8,8 +8,8 @@ import org.springframework.data.domain.Sort;
 @Setter
 public class Model_api {
 
-    private int pageSize = 10;
-    private int pageNumber = 0;
+    private int pageSize = 20;
+    private int pageNumber = 1;
     private String sortBy = "id";
     private Sort.Direction sortDirection = Sort.Direction.ASC;
 }
