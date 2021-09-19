@@ -43,7 +43,7 @@ public class Controller_api {
 
     }
 
-    @PostMapping
+    @PostMapping("/add")
     @ApiOperation(value = "Salvar atributo")
     public ResponseEntity<Model_Edp> addModelEdp(@RequestBody Model_Edp model_Edp) {
 
