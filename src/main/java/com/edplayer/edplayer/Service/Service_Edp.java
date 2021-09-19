@@ -29,8 +29,8 @@ public class Service_Edp {
         return repository_Edp.findAll(pageable);
     }
 
-    public Model_Edp addModelEdp(Model_Edp model_Edp) {
+/*     public Model_Edp addModelEdp(Model_Edp model_Edp) {
 
         return repository_Edp.save(model_Edp);
-    }
+    } */
 }

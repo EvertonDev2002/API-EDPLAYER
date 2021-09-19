@@ -45,10 +45,14 @@ public class Controller_api {
 
     @PostMapping("/add")
     @ApiOperation(value = "Salvar atributo")
-    public ResponseEntity<Model_Edp> addModelEdp(@RequestBody Model_Edp model_Edp) {
+    public Model_Edp addSound(@RequestBody Model_Edp model){
+        return repository.save(model);
+    }
+    
+ /*    public ResponseEntity<Model_Edp> addModelEdp(@RequestBody Model_Edp model_Edp) {
 
         return new ResponseEntity<>(service_API.addModelEdp(model_Edp), HttpStatus.CREATED);
-    }
+    } */
 
     @GetMapping("/{id}")
     @ApiOperation(value = "Buscar uma música")
