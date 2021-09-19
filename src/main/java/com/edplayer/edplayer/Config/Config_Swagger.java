@@ -24,7 +24,7 @@ public class Config_Swagger {
 
     private ApiInfo metaInfo() {
 
-        ApiInfo apiInfo = new ApiInfo("Recollection API REST", "API REST para relembrar bons momentos.", "1.0",
+        ApiInfo apiInfo = new ApiInfo("EdPlayer API REST", "API REST Dados de músicas.", "1.0",
                 "Terms of Service", new Contact("Éverton (Ed)", "http://bit.ly/3eWL0RK", "foreverplayer95@gmail.com"),
                 "Apache License Version 2.0", "https://www.apache.org/licesen.html", new ArrayList<VendorExtension>());
 
