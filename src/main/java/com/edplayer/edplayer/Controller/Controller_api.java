@@ -45,9 +45,9 @@ public class Controller_api {
 
     @PostMapping
     @ApiOperation(value = "Salvar atributo")
-    public ResponseEntity<Model_Edp> addModelApi(@RequestBody Model_Edp model_Edp) {
+    public ResponseEntity<Model_Edp> addModelEdp(@RequestBody Model_Edp model_Edp) {
 
-        return new ResponseEntity<>(service_API.addApi(model_Edp), HttpStatus.CREATED);
+        return new ResponseEntity<>(service_API.addModelEdp(model_Edp), HttpStatus.CREATED);
     }
 
     @GetMapping("/{id}")
